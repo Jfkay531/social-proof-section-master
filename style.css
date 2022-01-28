@@ -58,9 +58,6 @@
     color: var(--white);
   }
 
-  .author {
-    outline: 1px solid black;
-  }
 
   .author h4 {
      padding: 0px;
