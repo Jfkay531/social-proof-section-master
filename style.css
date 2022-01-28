@@ -1,0 +1,117 @@
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  :root { --verydarkmagenta: hsl(300, 43%, 22%);
+          --softpink: hsl(333, 80%, 67%);
+          --darkgrayishmagenta: hsl(303, 10%, 53%);
+          --lightgrayishnagenta: hsl(300, 24%, 96%);
+          --white: hsl(0, 0%, 100%);
+        }
+  /* * {
+    outline: 1px solid black; */
+  }
+  body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Spartan', sans-serif;
+
+  }
+
+  div {
+    border-radius: 10px;
+    padding: 5px
+    margin: 5px;
+  }
+
+  .top {
+    background-image: image("images/bg-pattern-mobile-top.svg");
+  }
+  .bottom {
+    background-image: image("images/bg-pattern-mobile-bottom.svg");
+  }
+  h1 {
+    color: var(--verydarkmagenta);
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .intro p{
+    color: var(--verydarkmagenta);
+    text-align: center;
+
+  }
+
+  p {
+    color:var(--white);
+    line-height: 28px;
+  }
+
+  .testimonial h4 {
+    color: var(--white);
+  }
+
+  .author {
+    outline: 1px solid black;
+  }
+
+  .author h4 {
+     padding: 0px;
+  }
+
+  .rating {
+    background-color: var(--lightgrayishnagenta);
+    text-align: center;
+    color: black;
+  }
+
+/* breaking a paragraph into two lines  */
+#stars::after{content: "\a";
+white-space: pre;
+}
+
+header {
+  background-image: url("images/bg-pattern-top-mobile.svg");
+}
+
+  .testimonial h5 {color: var(--softpink); }
+
+  .container{
+    /* width: 450px; */
+    height: 100vh;
+  }
+
+  .testimonial {
+    background-color: var(--verydarkmagenta);
+    padding: 5px 15px 5px 25px;
+    margin: 5px;
+    /* height: 100%; */
+  }
+
+  #avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    padding: 10px;
+  }
+
+  @media screen and (min-width: 900px)  {
+
+      body{display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+
+  }
