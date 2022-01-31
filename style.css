@@ -54,14 +54,16 @@
     line-height: 28px;
   }
 
-  .testimonial h4 {
+
+
+
+  #author {
     color: var(--white);
   }
-
-
-  .author h4 {
-     padding: 0px;
+  #authorinfo{
+    color: var(--softpink);
   }
+
 
   .rating {
     background-color: var(--lightgrayishnagenta);
@@ -80,18 +82,16 @@ header {
   background-image: url("images/bg-pattern-top-mobile.svg");
 }
 
-  .testimonial h5 {color: var(--softpink); }
+
 
   .container{
-    /* width: 450px; */
-    height: 100vh;
+    height: 80vh;
   }
 
   .testimonial {
     background-color: var(--verydarkmagenta);
     padding: 5px 15px 5px 25px;
     margin: 5px;
-
   }
 
   #avatar {
@@ -104,18 +104,32 @@ header {
 
   @media screen and (min-width: 900px)  {
       body{display: flex;
+        margin: 25px;
       height: 100vh;
       align-items: center;
       justify-content: center;
     }
 
-    .container {width:80vw;}
+    .container {
+      height: 100vh;
+
+    }
 
     .row1 {display: flex;
       background-image: url("images/bg-pattern-top-desktop.svg");
       background-repeat: no-repeat;
-    background-size: contain;}
+      background-size: contain;}
+
     .col1 {flex: 50%;}
+
+    .rating {
+        width: 42vw;
+        border-radius: 10px;
+    }
+    .testimonial {
+      height: 38vh;
+      width: 25vw;
+    }
 
     #rating1 {position: relative;right: 20px;}
      #rating2{position: relative;}
@@ -139,7 +153,8 @@ header {
 
     #test3{position: relative;top: 40px;}
 
-.row1, .row2 {width: 100%; padding: 10px 20px 10px 10px;}
-.row1 { padding-bottom: 0px;}
+    .row1, .row2 {width: 100%; padding: 10px 20px 10px 10px;}
+
+    .row1 { padding-bottom: 0px;}
 
   }
